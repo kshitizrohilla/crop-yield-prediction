@@ -1,0 +1,17 @@
+mysql -u root -p
+
+# password: root
+
+create database crop_yield_db;
+
+create table users (
+  id INT NOT NULL AUTO_INCREMENT,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+insert into users (username, password) VALUES ('user1', 'user1');
+
+CREATE USER 'user'@'localhost' IDENTIFIED BY 'user';
+GRANT ALL PRIVILEGES ON crop_yield_db.* TO 'user'@'localhost';
