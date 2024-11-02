@@ -1,9 +1,4 @@
 Flask
+Flask-MySQLdb
 numpy
 scikit-learn
-pandas
-requests
-flask-sqlalchemy
-flask-jwt-extended
-mysqlclient
-joblib
