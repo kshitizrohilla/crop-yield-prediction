@@ -15,3 +15,4 @@ insert into users (username, password) VALUES ('user1', 'user1');
 
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'user';
 GRANT ALL PRIVILEGES ON crop_yield_db.* TO 'user'@'localhost';
+FLUSH PRIVILEGES;
